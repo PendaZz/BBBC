@@ -1,0 +1,320 @@
+const matches = [
+  { 
+    game_id: "1",
+    TeamA_id: {
+      name: "Brisbane Bullets",
+      logo: require("../../assets/img/TeamLogo/BBBC.png"),
+    },
+    TeamB_id: {
+      name: "Cairns Taipans",
+      logo: require("../../assets/img/TeamLogo/Cairns Taipans NEG.png"),
+    },
+    type: "Past match",
+    date: "23/4/2024",
+    TeamA_score: "96",
+    TeamB_score: "65",
+  },
+  {
+    game_id: "2",
+    TeamA_id: {
+      name: "Adelaide 36ers",
+      logo: require("../../assets/img/TeamLogo/Adelaide 36ers.png"),
+    },
+    TeamB_id: {
+      name: "Brisbane Bullets",
+      logo: require("../../assets/img/TeamLogo/BBBC.png"),
+    },
+    type: "Past match",
+    date: "24/4/2024",
+    TeamA_score: "78",
+    TeamB_score: "89",
+  },
+  {
+    game_id: "3",
+    TeamA_id: {
+      name: "Brisbane Bullets",
+      logo: require("../../assets/img/TeamLogo/BBBC.png"),
+    },
+    TeamB_id: {
+      name: "Melbourne",
+      logo: require("../../assets/img/TeamLogo/Melbourne.png"),
+    },
+    type: "Past match",
+    date: "25/4/2024",
+    TeamA_score: "92",
+    TeamB_score: "96",
+  },
+  {
+    game_id: "4",
+    TeamA_id: {
+      name: "Brisbane Bullets",
+      logo: require("../../assets/img/TeamLogo/BBBC.png"),
+    },
+    TeamB_id: {
+      name: "Illawarra Hawks",
+      logo: require("../../assets/img/TeamLogo/Illawarra Hawks.png"),
+    },
+    type: "Past match",
+    date: "26/4/2024",
+    TeamA_score: "88",
+    TeamB_score: "95",
+  },
+  {
+    game_id: "5",
+    TeamA_id: {
+      name: "Kings",
+      logo: require("../../assets/img/TeamLogo/Kings.png"),
+    },
+    TeamB_id: {
+      name: "Brisbane Bullets",
+      logo: require("../../assets/img/TeamLogo/BBBC.png"),
+    },
+    type: "Past match",
+    date: "27/4/2024",
+    TeamA_score: "76",
+    TeamB_score: "98",
+  },
+  {
+    game_id: "6",
+    TeamA_id: {
+      name: "Brisbane Bullets",
+      logo: require("../../assets/img/TeamLogo/BBBC.png"),
+    },
+    TeamB_id: {
+      name: "Tasmania JackJumpers",
+      logo: require("../../assets/img/TeamLogo/Tasmania JackJumpers.png"),
+    },
+    type: "Past match",
+    date: "28/4/2024",
+    TeamA_score: "90",
+    TeamB_score: "87",
+  },
+  {
+    game_id: "7",
+    TeamA_id: {
+      name: "Adelaide 36ers",
+      logo: require("../../assets/img/TeamLogo/Adelaide 36ers.png"),
+    },
+    TeamB_id: {
+      name: "Brisbane Bullets",
+      logo: require("../../assets/img/TeamLogo/BBBC.png"),
+    },
+    type: "Live match",
+    date: "29/4/2024",
+    TeamA_score: "78",
+    TeamB_score: "89",
+  },
+  {
+    game_id: "8",
+    TeamA_id: {
+      name: "Adelaide 36ers",
+      logo: require("../../assets/img/TeamLogo/Adelaide 36ers.png"),
+    },
+    TeamB_id: {
+      name: "Brisbane Bullets",
+      logo: require("../../assets/img/TeamLogo/BBBC.png"),
+    },
+    type: "Coming match",
+    date: "29/6/2024",
+    TeamA_score: "0",
+    TeamB_score: "0",
+  },
+  // Add more matches as needed...
+];
+
+
+
+
+----------------------------------------------------------------
+
+
+
+const PlayerData = [
+  //Guard
+  {
+    surname: "Smith",
+    givenname: "Chris",
+    position: "Guard",
+    description: `Arrives for his first season at the Brisbane Bullets in the NBL a world renowned shooting threat having shot at more than 40 per cent from three-point range his entire career.\n\nThe 29-year-old spent his two years in college at Utah State University where he averaged 13.9 points, 4.5 rebounds and 2.3 assists a game while making 126 three-pointers across his 62 appearances going at 46.5 per cent.\n\nBegan his professional career playing in France with Vichy-Clermont before a season in Belgium with Circus Brussels, a season in Hungary with PVSK-Veolia and in Poland with Stal Ostrow Wielkopolski.\n\nSpent the last two seasons in Japan with the Chiba Jets, and had the two best seasons of his professional career averaging 16.3 points while going at 40.4 from three-point range in 2021/22, and then in 2022/23 upped that to 17.0 points at 43.7 per cent.\n\nWas named to the B-League Best Five on the back of that season that leads straight into his first season now in the NBL at the Bullets where he will look to provide that terrific shooting and scoring threat.`,
+    image: require("../../assets/img/Player/Chris Smith.jpg"),
+  },
+
+  {
+    surname: "Hadley",
+    givenname: "Gabe",
+    position: "Guard",
+    description: `Gabe Hadley has built himself a tremendous career in the NBL1 South at the Geelong United Supercats to bang down the door to the NBL, and he has joined the Brisbane Bullets for NBL24.\n\n
+            The now 25-year-old has carved out a terrific career for himself at the Supercats firstly in the SEABL and now the NBL1 South competition, and with his all-round talents as a guard who could shoot, score and run his team's offence, an NBL chance seemed just a matter of time.\n\n
+            He did receive his first taste of the NBL at the Cairns Taipans firstly as a training player, then injury replacement player and more recently in the 2022/23 season as a development player where he got to make his debut.\n\n
+            On the back of that, he returned to the Supercats for the 2023 NBL1 South season and helped them to a flying finish to the season despite narrowly missing the finals. He was terrific averaging 20.5 points, 4.6 rebounds, 2.7 assists and 1.2 steals a game.\n\n
+            He now has reunited with his Geelong coach Justin Schueller at the Bullets as he looks to take advantage of what he hopes will be more opportunities.`,
+    image: require("../../assets/img/Player/Gabe Hadley.jpg"),
+  },
+
+  {
+    surname: "White",
+    givenname: "Isaac",
+    position: "Guard",
+    description: `Has always been a pure scorer and on the back of leading the NBL1 scoring across the country in 2023, joins the Brisbane Bullets for the first time in NBL24.\n\n
+            He has played 83 games in the NBL coming into the 2023/24 season, but it was some stability and a full roster spot he has been craving and that's what the Bullets will now provide him.\n\n
+            The now 25-year-old grew up in Adelaide and came through at the Sturt Sabres even scoring 65 points in 2017 against the West Adelaide Bearcats while leading South Australia to the under-20s championship that year.\n\n
+            Ended up spending three years in college at Stanford University before beginning his NBL career with the Illawarra Hawks in the 2020/21 season.\n\n
+            Spent two seasons with the Hawks before ending up at the Tasmania JackJumpers in NBL23 as an injury replacement player. Ended up playing a big role for the whole season including two 18-point performances.\n\n
+            Was always going to sign a full contract again somewhere for NBL24 on the back of what he was doing leading the nation in scoring with 32.7 points a game playing in the NBL1 North at the Mackay Meteors, and has now joined the Bullets for the first time.`,
+    image: require("../../assets/img/Player/Isaac White.jpg"),
+  },
+
+  {
+    surname: "Norton",
+    givenname: "Mitch",
+    position: "Guard",
+    description: `He grew up wiping the floors in Townsville, achieved his dream as the youngest ever captain at the Crocodiles and has only gone from strength to strength since ahead of a first NBL season with the Brisbane Bullets.\n\n
+            Having grown up in Townsville, he grew up attending Crocs match ups and even was a floor wiper for a period as he grew up as one of the best emerging talents in Queensland.\n\n
+            Got his first opportunity in the NBL with his hometown team during the 2011/12 season aged just 18 and would play his first 116 games with Townsville, was the club's youngest ever captain and only had to move on when the club ceased to exist.\n\n
+            Joined the Illawarra Hawks for the 2016/17 and 2017/18 NBL seasons cementing himself as a terrific playmaking point guard and one of the best and toughest defenders in the league.\n\n
+            Then made the move west to join the Perth Wildcats starting in the 2018/19 season and made his mark immediately including playing in championship teams of 2019 and 2020, being appointed vice-captain and remaining one of the most respected competitors in the league.\n\n
+            Now returns to his home state for a first season with the Bullets as a 30-year-old with 314 games in the NBL behind him.`,
+    image: require("../../assets/img/Player/Mitch Norton.jpg"),
+  },
+
+  {
+    surname: "Sobey",
+    givenname: "Nathan",
+    position: "Guard",
+    description: `Has been a remarkable story as someone who turned his enormous athletic potential into becoming one of the best Australian basketballers through his hard work as he prepares for a fifth season with the Brisbane Bullets.\n\n
+            The now 33-year-old superstar guard grew up in the Victorian town of Warrnambool before spending four years at college starting with two years at Cochise College and then the next two seasons at the University of Wyoming.\n\n
+            His first NBL opportunity would come as a development player at the Cairns Taipans in 2014/15 where he showed flashes of what he was going to be capable of with his explosive athleticism.\n\n
+            Earned his first full contract the next season at the Adelaide 36ers and that's where he confirmed himself a genuine star in the league. He was named both the NBL's Most Improved Player and to the All-Second Team in 2017.\n\n
+            Was a key member of Adelaide's run to the 2018 Grand Final before joining the Brisbane Bullets in 2019/20 where he has remained ever since, now being a veteran of 233 NBL games.\n\n
+            On top of that, has been a regular Australian Boomers member including being part of the bronze medal winning team in Tokyo and now enters NBL24 on the back of an inspirational performance leading the Ipswich Force to a first ever NBL1 North championship as Grand Final MVP.`,
+    image: require("../../assets/img/Player/Nathan Sobey.jpg"),
+  },
+
+  {
+    surname: "McDaniel",
+    givenname: "Sam",
+    position: "Guard",
+    description: `Has been a significant member of whatever team he has been part of already in his 117-game NBL career as he prepares for a first season with the Brisbane Bullets.\n\n
+            Is the son of former NBL star Wayne who played at Adelaide, Geelong, Newcastle and Hobart, and prior to starting his own professional career spent four years at college beginning with two seasons at Southeastern Community College.\n\n
+            Spent the last two years at the University of Louisiana, Monroe before returning to Australia and playing in the SEABL (now NBL1 South) and then signing on with Melbourne United as a development player.\n\n
+            Joined the full roster of United for the 2018/19 season and was part of the team's 2021 NBL championship before joining the inaugural Tasmania JackJumpers squad for the 2021/22 season.\n\n
+            Was a key figure in the JackJumpers reaching the Grand Final in NBL22 before then being Grand Final MVP in the Hobart Chargers winning an NBL1 South championship.\n\n
+            After a second season with the JackJumpers, had another strong 2023 NBL1 South season as the league's Best Defensive Player and now joins the Bullets for the first time in NBL24.`,
+    image: require("../../assets/img/Player/Sam McDaniel.jpg"),
+  },
+
+  {
+    surname: "Scott",
+    givenname: "Shannon",
+    position: "Guard",
+    description: "None",
+    image: require("../../assets/img/Player/Shannon Scott.jpg"),
+  },
+
+  {
+    surname: "Devers",
+    givenname: "Tristan",
+    position: "Guard",
+    description: `The 18-year-old guard will get his first taste of the NBL in the 2023/24 season signing with the Brisbane Bullets as a development player.\n\n
+            The versatile guard is a good size standing 6'4 and joins the Bullets having come through the ranks of his local club the Nunawading Spectres and has been a regular in junior national teams.\n\n
+            He has played with Australian team at both the under-17 FIBA World Cup and under-16 Asia Cup. Was coached by Bullets head coach Justin Schueller at the World Cup, so in a lot of ways it was a natural fit for his first foray into the NBL to come with Brisbane.\n\n
+            Has continued his development as a combo guard and that included a game this past NBL1 South season at the Nunawading Spectres where he scored 26 points against Andrew Gaze's Melbourne Tigers ahead of moving north to join the Bullets for NBL24.`,
+    image: require("../../assets/img/Player/Tristan Devers.jpg"),
+  },
+
+  //Forward
+  {
+    surname: "Bannan",
+    givenname: "Josh",
+    position: "Forward",
+    description: "None",
+    image: require("../../assets/img/Player/Josh Bannan.jpg"),
+  },
+
+  {
+    surname: "Mitchell",
+    givenname: "DJ",
+    position: "Forward",
+    description: `The 26-year-old is entering a second NBL season with the Brisbane Bullets and having proven himself a standout shooter for his size, will be looking to continue his emergence.\n\n
+            His father, Mike, played in the NBL as an import with the North Melbourne Giants in 1997 which is where his parents met and while he was born in Melbourne, grew up in Fresno, California and ended up attending college firstly at Wake Forest and then Santa Clara.\n\n
+            Started his professional carer in the 2021/22 season in the Netherlands playing for BAL where he impressed averaging 16.0 points, 8.2 rebounds and 2.8 assists a game before coming down under to play in the NBL1 North at the Gold Coast Rollers.\n\n
+            Was a key part of the team that went on to win the NBL1 North championship putting up 18.4 points, 8.6 rebounds, 2.7 assists and 1.8 blocks leading into his first NBL season at the Bullets.\n\n
+            Showed encouraging signs largely as a power forward in NBL23 and his three-point shooting at 44.4 per cent was especially impressive before he spent this off-season playing in Poland with ?l?sk Wroc?aw.\n\n
+            His team reached the championship series ahead of him now returning to the Bullets for a second season.`,
+    image: require("../../assets/img/Player/DJ Mitchell.jpg"),
+  },
+
+  {
+    surname: "Prather",
+    givenname: "Casey",
+    position: "Forward",
+    description: `The 22-year-old forward decided to not complete his college career and instead start his professional career early and he is going to do that at the Brisbane Bullets in NBL24.\n\n
+            Having grown up in Melbourne, the now 6'10 power forward was always a talent on the rise in Australian basketball and played in the under-17s team at the 2018 World Cup where his now Bullets coach Justin Schueller was in charge.\n\n
+            Then attended the University of Montana for the last three years and over that time he averaged 13.1 points and 7.6 rebounds including his 2022/23 season where he put up 15.0 points and 8.5 boards including shooting 49.9 per cent from the field and 40.4 from beyond the arc.\n\n
+            Someone who stands at 6'10 and can shoot the ball like he can was always going to attract plenty of interest from clubs to start his professional career, but it was the Bullets who won his signature and he will now look to make his mark as a rookie in the 2023/24 season.`,
+    image: require("../../assets/img/Player/Casey Prather.jpg"),
+  },
+
+  //Power Forward
+  {
+    surname: "Johns",
+    givenname: "Matthew",
+    position: "Power Forward",
+    description: `The Geelong product is entering his second season with the Brisbane Bullets and the powerfully built 24-year-old continues to improve year after year.\n\n
+            With an impressive 203cm, 103kg frame, he has always had a powerful body to build his game around and the Geelong native spent his first two seasons at college with the University of South Dakota.\n\n
+            He played 25 games over those two seasons with the Coyotes before spending his last two years at Concordia University St Paul before returning home to Geelong to complete the 2022 NBL1 South season at the Supercats.\n\n
+            That led into his first NBL opportunity in the 2022/23 season as a development player with the Bullets and then he played in 2023 in the NBL1 North at the Brisbane Capitals.\n\n
+            The big man is back again with the Bullets in NBL24 and adds some extra size and grunt, as well as experience now as a development player to add to the front court depth under a coach he is familiar with, Justin Schueller.`,
+    image: require("../../assets/img/Player/Matthew Johns.jpg"),
+  },
+
+  //Center
+  {
+    surname: "Baynes",
+    givenname: "Aron",
+    position: "Center",
+    description: `Is one of Australia's all-time most decorated basketball players on the world stage and is entering his second season at the Brisbane Bullets ready to get back to his best after a career-threatening injury.\n\n
+            After being born in Gisborne, New Zealand, spent most of his childhood in the Far North Queensland town of Mareeba and then went to the Australian Institute of Sport in 2004, and the rest is history.\n\n
+            Had a terrific four-year college career at Washington State University before starting his professional career throughout Europe in Lithuania, Germany, Greece and Slovenia.\n\n
+            His first NBA opportunity came in 2013 at the San Antonio Spurs where he went on to win a championship in 2014. \n\n
+            Spent two seasons at the Detroit Pistons, two at the Boston Celtics and his career-best season was 2019/20 at the Phoenix Suns where he averaged 11.5 points and 5.6 rebounds a game while shooting 35.1 per cent from three-point land.\n\n
+            Played his last season in 2020/21 at the Toronto Raptors to amass 574 NBA appearances.\n\n
+            It's in the green-and-gold of the Boomers where he has been even more significant playing for Australia at the Olympics of 2012, 2016 and 2021, and World Cups of 2010, 2014 and 2019.\n\n
+            However, his career was in serious jeopardy with a serious spinal cord nerve injury at Tokyo in 2021. He made it back to play in NBL23 at the Bullets and now is ready to get back to his best in NBL24.`,
+    image: require("../../assets/img/Player/Aron Baynes.jpg"),
+  },
+
+  {
+    surname: "Zikarsky",
+    givenname: "Rocco",
+    position: "Center",
+    description: `The recently turned 17-year-old who already stands 7'3 tall has a remarkable potential and he is going to begin that professional journey in NBL24 with the Brisbane Bullets.\n\n
+        Despite being aged just 16, was one of the hottest properties and with the world at his feet but decided to join the NBL Next Star program to start his professional career and signed with the Brisbane Bullets.\n\n
+        Penned a two-year Next Star deal to join the Bullets given he won't be eligible for the NBA Draft until 2025 and having only just turned 17, the big man is one of the most exciting talents to come through Australian basketball in a long time.\n\n
+        Has starred in Queensland representative teams and been part of the NBA Global Academy in Canberra while also having played at the Centre of Excellence in the NBL1 East during 2023, ahead of now joining the Bullets ahead of his first NBL season.\n\n
+        Given his pure size and with the ability to move well given his size and his ability to play above the rim at both ends of the floor, it's obvious why there is so much excitement surrounding him.`,
+    image: require("../../assets/img/Player/Rocco Zikarsky.jpg"),
+  },
+
+  {
+    surname: "Harrison",
+    givenname: "Tyrell",
+    position: "Center",
+    description: `The New Zealand international has battled some tough injuries through his career already, but when on the floor remains an impressive and important piece for the Brisbane Bullets at both ends.\n\n
+        While he was born and raised in Brisbane, decided to represent his father's homeland of New Zealand in international basketball, and has been a regular Tall Blacks squad member throughout his NBL career at the Bullets.\n\n
+        First signed with the Bullets for the 2017/18 season as a development player and while he only hit the floor in 17 matches over his first three seasons, he continued to develop and had an especially strong 2019 off-season in the NZ NBL with the Nelson Giants averaging 12.9 points, 6.2 rebounds and 1.2 blocks.\n\n
+        His dedication to improve and patience with the Bullets was rewarded by 2021 when he appeared in all 36 matches in the NBL averaging 5.2 points and 5.8 rebounds a game. He had an even bigger impact in NBL22 with 6.2 points, 5.7 boards and 1.2 blocks.\n\n
+        Injury limited him to 16 appearances last season, but when out there he was an impact maker with 5.0 points and 4.4 rebounds while shooting a phenomenal 82 per cent from the field.\n\n
+        Now enters the 2023/24 season a new father and fully fit, and ready to thrive as a finisher at the rim, rebounder and defensive presence at the rack in his seventh season with the Bullets.`,
+    image: require("../../assets/img/Player/Tyrell Harrison.jpg"),
+  },
+];
+
+
+
+
+----------------------------------------------------------------
+
+
+
+
